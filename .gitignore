@@ -13,3 +13,6 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+/Lesson1/.idea/Lesson1.iml
+/Lesson1/.idea/modules.xml
+/Lesson1/.idea/vcs.xml
