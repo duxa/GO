@@ -5,17 +5,17 @@ import (
 )
 
 func main() {
-	var digit, hundreds, dozens, units int64
+	var number, hundreds, dozens, units int
 	fmt.Print("Введите трехзначное число: ")
-	fmt.Scanln(&digit)
-	if !(100 <= digit && digit <= 999) {
+	fmt.Scanln(&number)
+	if !(100 <= number && number <= 999) {
 		fmt.Println("Не верное число!")
-		return;
+		return
 	}
 
-	hundreds = digit / 100
-	dozens = (digit - hundreds*100) / 10
-	units = digit - hundreds*100 - dozens*10
+	hundreds = number / 100
+	dozens = (number - hundreds*100) / 10
+	units = number - hundreds*100 - dozens*10
 
-	fmt.Printf("Сотни: %v, Десятки: %v Единицы: %v \n", hundreds, dozens, units)
+	fmt.Printf("Сотни: %d, Десятки: %d Единицы: %d \n", hundreds, dozens, units)
 }
